@@ -4,12 +4,13 @@ import { Path, Circle } from 'react-native-svg'
 
 import ChartContext from './ChartContext'
 import { adjustPointsForThickStroke, calculateTooltipIndex } from './Line.utils'
-import { ChartDataPoint, Smoothing, Stroke } from './types'
+import { ChartDataPoint, Points, Smoothing, Stroke } from './types'
 import { scalePointsToDimensions, svgPath } from './utils'
 
 type Props = {
   /** Theme for the line */
   theme?: {
+    points?: Points
     stroke?: Stroke
   }
   smoothing?: Smoothing
