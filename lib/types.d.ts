@@ -31,6 +31,11 @@ export declare type Stroke = {
     width?: number;
     opacity?: number;
 };
+export declare type Points = {
+    color?: string;
+    selectedColor?: string;
+    radius?: number;
+};
 export declare type Box = {
     color?: string;
     width?: number;

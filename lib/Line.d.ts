@@ -1,8 +1,9 @@
 import * as React from 'react';
-import { ChartDataPoint, Smoothing, Stroke } from './types';
+import { ChartDataPoint, Points, Smoothing, Stroke } from './types';
 declare type Props = {
     /** Theme for the line */
     theme?: {
+        points?: Points;
         stroke?: Stroke;
     };
     smoothing?: Smoothing;
